@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const Img = styled.img`
   width:100%;
   height:100%;
+  border-radius: 10px;
   object-fit: cover;
   overflow: hidden;
 `
@@ -19,6 +20,7 @@ row-gap: 3rem;
   flex-direction: column;
   padding: 2rem;
   padding-bottom: 0;
+  margin-bottom: 2rem;
 }
 
 `
@@ -70,6 +72,8 @@ export const CardInfo = styled.p`
   width: 100%;
   padding: 0 50px;
   color: #e4e6e7;
+  white-space: pre-line;
+  overflow: hiddenn;
   font-style: 2rem;
   line-height: 24px;
   text-align: justify;

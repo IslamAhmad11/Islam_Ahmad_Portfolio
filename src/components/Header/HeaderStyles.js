@@ -2,12 +2,17 @@ import { IoIosArrowDropdown } from 'react-icons/io';
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  display: grid;z
-  grid-template-columns: repeat(5, 1fr);
+  width: 100%;
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
   grid-column-gap: 2rem;
-  padding: 1rem;
-  padding-top: 2rem;
+  padding: 0rem 3rem;
+  background-color: #182547;
+  z-index: 100;
+  top: 0px;
+  position: sticky;
 
   @media ${(props) => props.theme.breakpoints.sm} {
     display: grid;
@@ -16,10 +21,28 @@ export const Container = styled.div`
     grid-column-gap: 0.5rem;
     grid-row-gap: 0.5rem;
   }
+  @media screen and (max-width: 768px){{height: 9vh;}
 `;
-
+export const MenuBars = styled.a`
+    display: none;
+    @media screen and (max-width: 767px){
+        display: block;
+        background-size: contain;
+        height: 40px;
+        width: 40px;
+        cursor: pointer;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 999;
+        transform: translate(-50%, 25%);
+    }
+`;
 export const Span = styled.span`
 font-size: 2rem;
+@media ${(props) => props.theme.breakpoints.sm} {
+  white-space: nowrap;
+}
 `;
 
 export const Div1 = styled.div`
@@ -27,6 +50,7 @@ export const Div1 = styled.div`
   display: flex;
   flex-direction: row;
   align-content: center;
+  padding-top: 1.5rem;
   @media ${(props) => props.theme.breakpoints.sm} {
     grid-area: 1 / 1 / 2 / 3;
   }
@@ -37,7 +61,9 @@ export const Div2 = styled.div`
   justify-content: space-around;
   @media ${(props) => props.theme.breakpoints.sm} {
     grid-area: 2 / 2 / 3 / 5;
+    grid-column-gap: 4rem;
   }
+  @media screen and (max-width: 767px){{display: none;}
 `;
 export const Div3 = styled.div`
   grid-area: 1 / 5 / 2 / 6;
@@ -48,6 +74,7 @@ export const Div3 = styled.div`
     align-items: center;
     grid-area: 1 / 4 / 2 / 6;
   }
+  @media screen and (max-width: 767px){{display: none;}
 `;
 
 // Navigation Links
@@ -112,18 +139,15 @@ export const NavProductsIcon = styled(IoIosArrowDropdown)`
   }
 `;
 
-
 // Social Icons 
-
 export const SocialIcons = styled.a`
-transition: 0.3s ease;
-color: white;
-border-radius: 50px;
+  transition: 0.3s ease;
+  color: white;
+  border-radius: 50px;
   padding: 8px;
-&:hover {
-    background-color: #212d45;
-    transform: scale(1.2);
-    cursor: pointer;
-    
+  &:hover {
+      background-color: #212d45;
+      transform: scale(1.2);
+      cursor: pointer;
   }
 `

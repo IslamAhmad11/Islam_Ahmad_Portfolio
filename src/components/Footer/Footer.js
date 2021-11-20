@@ -1,35 +1,35 @@
 import React from 'react';
-import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
+import { AiFillGithub, AiFillTwitterCircle, AiFillLinkedin } from 'react-icons/ai';
 
 import { SocialIcons } from '../Header/HeaderStyles';
-import { CompanyContainer, FooterWrapper, LinkColumn, LinkItem, LinkList, LinkTitle, Slogan, SocialContainer, SocialIconsContainer } from './FooterStyles';
+import { CompanyContainer, FooterWrapper, LinkColumn, LinkItem, LinkList, LinkTitle, MyPhoto, Slogan, SocialIconsContainer} from './FooterStyles';
 
 const Footer = () => {
   return (
-    <FooterWrapper>
+    <FooterWrapper id="footer">
       <LinkList>
         <LinkColumn>
           <LinkTitle>Call</LinkTitle>
-          <LinkItem href="tel:002-01276-893-515">002-01276-893-515</LinkItem>
+          <LinkItem href="tel:002-01276-893-515" target="_blank">002-01276-893-515</LinkItem>
         </LinkColumn>
         <LinkColumn>
           <LinkTitle>Email</LinkTitle>
-          <LinkItem href="mailto:islamahmed1145@gmail.com">islamahmed1145@gmail.com</LinkItem>
+          <LinkItem href="mailto:islamahmed1145@gmail.com" target="_blank">islamahmed1145@gmail.com</LinkItem>
         </LinkColumn>
       </LinkList>
       <SocialIconsContainer>
           <CompanyContainer>
             <Slogan>Innovating one project at a time</Slogan>
           </CompanyContainer>
-          <SocialIcons  href="https://github.com">
+          <SocialIcons href="https://github.com/IslamAhmad11" target="_blank">
             <AiFillGithub size="3rem" />
-        </SocialIcons>
-        <SocialIcons  href="https://linkedin.com">
+          </SocialIcons>
+          <SocialIcons href="https://www.linkedin.com/in/islam-ahmad-0692861b4" target="_blank">
             <AiFillLinkedin size="3rem" />
-        </SocialIcons>
-        <SocialIcons  href="https://instagram.com">
-            <AiFillInstagram size="3rem" />
-        </SocialIcons>
+          </SocialIcons>
+          <SocialIcons href="https://twitter.com/Islamahmadibra" target="_blank">
+            <AiFillTwitterCircle size="3rem" />
+          </SocialIcons>
       </SocialIconsContainer>
     </FooterWrapper>
   );
