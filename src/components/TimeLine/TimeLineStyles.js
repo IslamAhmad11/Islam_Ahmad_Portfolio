@@ -1,6 +1,28 @@
 
 import styled from 'styled-components'
 
+export const AboutContainer = styled.div`
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+place-items: center;
+@media ${(props) => props.theme.breakpoints.sm} {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  padding-bottom: 0;
+  margin-bottom: 2rem;
+}
+`
+
+//MyPhoto
+export const MyPhoto = styled.img`
+	width: 50%;
+	border-radius: 20px;
+	box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
+	object-fit: cover;
+  overflow: hidden;
+`
+
 export const CarouselContainer = styled.ul`
   max-width: 1040px;
   background: #0F1624;
