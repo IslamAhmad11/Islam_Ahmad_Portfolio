@@ -10,11 +10,11 @@ const Header = ({toggle}) => {
   
         return(
           <Container>
-            <MenuBars id="icn" onClick={toggle}>
+            <MenuBars id="icn" onclick={() => toggle}>
             <FaBars size="3rem" />
           </MenuBars>
               <Div1>
-                <Link href="/">
+                <Link href="/#">
                   <a style={{ display: "flex", alignItems: "center", color: 'white', marginBottom: '20px' }}>
                     <DiCode size="4rem" /> <Span>Islam Ahmad</Span>
                   </a>
@@ -22,17 +22,17 @@ const Header = ({toggle}) => {
               </Div1>
               <Div2>
                 <li>
-                  <Link href="#projects">
+                  <Link href="/#projects">
                     <NavLink>Projects</NavLink>
                   </Link>
                 </li>
                 <li>
-                  <Link href="#tech">
+                  <Link href="/#tech">
                     <NavLink>Technologies</NavLink>
                   </Link>
                 </li>
                 <li>
-                  <Link href="#about">
+                  <Link href="/#about">
                     <NavLink>About</NavLink>
                   </Link>
                 </li>
