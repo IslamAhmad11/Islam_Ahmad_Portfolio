@@ -10,11 +10,11 @@ const Header = ({toggle}) => {
   
         return(
           <Container>
-            <MenuBars id="icn" onclick={() => toggle}>
+            <MenuBars id="icn" onClick={() => toggle}>
             <FaBars size="3rem" />
           </MenuBars>
               <Div1>
-                <Link href="/#">
+                <Link href="/">
                   <a style={{ display: "flex", alignItems: "center", color: 'white', marginBottom: '20px' }}>
                     <DiCode size="4rem" /> <Span>Islam Ahmad</Span>
                   </a>
