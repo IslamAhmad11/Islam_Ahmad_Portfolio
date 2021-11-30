@@ -26,7 +26,9 @@ export const projects = [
   {
     title: 'ACME Web Design',
     description: "It's a web designer's responsibility to construct the overall look and feel of a website,\
-                  using images, HTML, CSS, and JavaScript to do so. Designers are typically creative in nature.",
+                  using images, HTML, CSS, and JavaScript to do so. Designers are typically creative in nature\
+                  It's a web designer's responsibility to construct the overall look and feel of a website\
+                  It's a web designer's responsibility to construct.",
     image: 'images/3.webp',
     tags: ['HTML5', 'CSS3'],
     source: 'https://google.com',
@@ -34,9 +36,10 @@ export const projects = [
     id: 2,
   },
   {
-    title: 'Video Game DB',
-    description: "provide centralized services to purchase and download digital content for either specific video game\
-                  limiting the use of purchased items to one account consoles or PCs.",
+    title: 'Task Tracker App',
+    description: "Using React, It includes the react ui as well as JSON-server for our mock backend,\
+                  that helps you make sure no tasks slip through the cracks with everything you have to do in a day.\
+                  And it's not just for personal task tracking. You can manage your team members tasks too.",
     image: 'images/4.webp',
     tags: ['Angular', 'JavaScript'],
     source: 'https://google.com',
