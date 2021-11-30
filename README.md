@@ -1,1 +1,1 @@
-# My personal portfolio use React and Next.js.
+# My personal portfolio using React and Next.js.
