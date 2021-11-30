@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
-import { AiFillGithub, AiFillTwitterCircle, AiFillLinkedin } from 'react-icons/ai';
+import { AiFillGithub, AiFillLinkedin, AiFillCodepenCircle } from 'react-icons/ai';
 import {FaBars} from 'react-icons/fa';
 import { DiCode } from 'react-icons/di';
 
@@ -44,8 +44,8 @@ const Header = ({toggle}) => {
                 <SocialIcons href="https://www.linkedin.com/in/islam-ahmad-0692861b4" target="_blank">
                   <AiFillLinkedin size="3rem" />
                 </SocialIcons>
-                <SocialIcons href="https://twitter.com/Islamahmadibra" target="_blank">
-                  <AiFillTwitterCircle size="3rem" />
+                <SocialIcons href="https://codepen.io/islamahmad11" target="_blank">
+                  <AiFillCodepenCircle size="3rem" />
                 </SocialIcons>
               </Div3>
             </Container>

@@ -8,8 +8,8 @@ export const projects = [
                   And it's not just for personal task tracking. You can manage your team members tasks too.",
     image: 'images/1.webp',
     tags: ['React', 'JavaScript'],
-    source: 'https://google.com',
-    visit: 'https://google.com',
+    live: 'https://google.com',
+    code: 'https://github.com/IslamAhmad11/React-Task-Tracker.git',
     id: 0,
   },
   {
@@ -19,8 +19,8 @@ export const projects = [
                   you can deliver your message and content to customers.",
     image: 'images/2.webp',
     tags: ['React', 'JavaScript'],
-    source: 'https://google.com',
-    visit: 'https://google.com',
+    live: 'https://google.com',
+    code: 'https://github.com/IslamAhmad11/Real_Estate_Agency_Template.git',
     id: 1,
   },
   {
@@ -31,19 +31,19 @@ export const projects = [
                   It's a web designer's responsibility to construct.",
     image: 'images/3.webp',
     tags: ['HTML5', 'CSS3'],
-    source: 'https://google.com',
-    visit: 'https://google.com',
+    live: 'https://google.com',
+    code: 'https://github.com/IslamAhmad11/Acme.git',
     id: 2,
   },
   {
     title: 'Task Tracker App',
-    description: "Using React, It includes the react ui as well as JSON-server for our mock backend,\
+    description: "{This project UNDER DEVELOPMENT...}\nUsing React, It includes the react ui as well as JSON-server for our mock backend,\
                   that helps you make sure no tasks slip through the cracks with everything you have to do in a day.\
                   And it's not just for personal task tracking. You can manage your team members tasks too.",
     image: 'images/4.webp',
     tags: ['Angular', 'JavaScript'],
-    source: 'https://google.com',
-    visit: 'https://google.com',
+    live: 'https://google.com',
+    code: 'https://github.com/IslamAhmad11/Angular-Task-Tracker.git',
     id: 3,
   },
 ];
